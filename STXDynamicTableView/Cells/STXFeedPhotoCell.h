@@ -7,6 +7,8 @@
 //
 
 @import UIKit;
+#import "STXUserItem.h"
+#import "STXPostItem.h"
 
 @protocol STXFeedPhotoCellDelegate <NSObject>
 
