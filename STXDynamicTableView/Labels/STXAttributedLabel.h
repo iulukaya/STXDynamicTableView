@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 2359 Media. All rights reserved.
 //
 
-#import "TTTAttributedLabel.h"
+#import <TTTAttributedLabel/TTTAttributedLabel.h>
 
 @interface STXAttributedLabel : TTTAttributedLabel
 
