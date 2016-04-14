@@ -90,7 +90,7 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
 - (void)setLikesLabel:(TTTAttributedLabel *)likesLabel count:(NSInteger)count
 {
     NSString *countString = [@(count) stringValue];
-    NSString *title = [NSString stringWithFormat:NSLocalizedString(@"%@ loves", nil), countString];
+    NSString *title = [NSString stringWithFormat:NSLocalizedString(@"%@ likes", nil), countString];
     likesLabel.text = title;
 }
 
@@ -112,9 +112,9 @@ static CGFloat STXLikesViewTrailingEdgeInset = 10.f;
     
     if ([likersString length] > 0) {
         if ([likerNames count] == 1) {
-            [likersString appendString:NSLocalizedString(@" loves this", nil)];
+            [likersString appendString:NSLocalizedString(@" likes this", nil)];
         } else {
-            [likersString appendString:NSLocalizedString(@" love this", nil)];
+            [likersString appendString:NSLocalizedString(@" like this", nil)];
         }
     }
     
