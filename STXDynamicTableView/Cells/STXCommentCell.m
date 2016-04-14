@@ -7,6 +7,7 @@
 //
 
 #import "STXCommentCell.h"
+#import "STXUserItem.h"
 #import "STXAttributedLabel.h"
 #import <PureLayout/PureLayout.h>
 #import <UALogger/UALogger.h>
