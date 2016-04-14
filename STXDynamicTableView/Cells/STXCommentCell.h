@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import "STXCommentItem.h"
 
 typedef NS_ENUM(int16_t, STXCommentCellStyle) {
     STXCommentCellStyleSingleComment,
