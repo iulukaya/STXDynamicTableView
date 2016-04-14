@@ -9,6 +9,8 @@
 #import "STXFeedPhotoCell.h"
 
 #import "UIImageView+Masking.h"
+#import <MHPrettyDate/MHPrettyDate.h>
+
 
 @interface STXFeedPhotoCell ()
 

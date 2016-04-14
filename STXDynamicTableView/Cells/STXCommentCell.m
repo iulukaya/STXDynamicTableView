@@ -8,6 +8,8 @@
 
 #import "STXCommentCell.h"
 #import "STXAttributedLabel.h"
+#import <PureLayout/PureLayout.h>
+#import <UALogger/UALogger.h>
 
 static CGFloat STXCommentViewLeadingEdgeInset = 10.f;
 static CGFloat STXCommentViewTrailingEdgeInset = 10.f;

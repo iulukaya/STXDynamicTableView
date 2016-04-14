@@ -8,6 +8,8 @@
 
 #import "STXCaptionCell.h"
 #import "STXAttributedLabel.h"
+#import <PureLayout/PureLayout.h>
+#import <UALogger/UALogger.h>
 
 static CGFloat STXCaptionViewLeadingEdgeInset = 10.f;
 static CGFloat STXCaptionViewTrailingEdgeInset = 10.f;
