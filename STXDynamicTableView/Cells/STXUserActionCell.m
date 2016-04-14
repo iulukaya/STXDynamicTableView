@@ -8,8 +8,6 @@
 
 #import "STXUserActionCell.h"
 
-#import "UIButton+STXButton.h"
-
 @interface STXUserActionCell ()
 
 @property (weak, nonatomic) IBOutlet UIButton *likeButton;
@@ -50,27 +48,16 @@
 {
     _postItem = postItem;
     
-    NSString *likeButtonTitle = postItem.liked ? NSLocalizedString(@"Loved", nil) : NSLocalizedString(@"Love", nil);
-    [self.likeButton setTitle:likeButtonTitle forState:UIControlStateNormal];
-    
-    if (postItem.liked) {
-        [self.likeButton stx_setSelectedAppearance];
-    } else {
-        [self.likeButton stx_setNormalAppearance];
-    }
+    [self.likeButton setImage:[UIImage imageNamed:(postItem.liked ? @"ic_favorite" : @"ic_favorite_border")]
+                     forState:UIControlStateNormal];
 }
 
 #pragma mark - Action
 
 - (void)setButton:(UIButton *)button toLoved:(BOOL)loved
 {
-    if (loved) {
-        [button setTitle:NSLocalizedString(@"Loved", nil) forState:UIControlStateNormal];
-        [button stx_setSelectedAppearance];
-    } else {
-        [button setTitle:NSLocalizedString(@"Love", nil) forState:UIControlStateNormal];
-        [button stx_setNormalAppearance];
-    }
+    [self.likeButton setImage:[UIImage imageNamed:(loved ? @"ic_favorite" : @"ic_favorite_border")]
+                     forState:UIControlStateNormal];
 }
 
 - (IBAction)like:(id)sender
@@ -80,9 +67,6 @@
     if (![sender isUserInteractionEnabled]) {
         return;
     }
-    
-    // Prevent rapid interaction
-    [sender setUserInteractionEnabled:NO];
     
     if (![self.postItem liked]) {
         [self setButton:sender toLoved:YES];
