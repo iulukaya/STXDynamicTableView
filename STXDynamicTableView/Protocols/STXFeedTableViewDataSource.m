@@ -15,8 +15,9 @@
 #import "STXUserActionCell.h"
 
 #define PHOTO_CELL_ROW 0
-#define LIKES_CELL_ROW 1
-#define CAPTION_CELL_ROW 2
+#define USERACTION_CELL_ROW 1
+#define LIKES_CELL_ROW 2
+#define CAPTION_CELL_ROW 3
 
 #define NUMBER_OF_STATIC_ROWS 4
 #define MAX_NUMBER_OF_COMMENTS 5
@@ -182,7 +183,7 @@
 {
     UITableViewCell *cell;
     
-    NSInteger captionRowOffset = 3;
+    NSInteger captionRowOffset = 4;
     
     id<STXPostItem> postItem = self.posts[indexPath.section];
     NSInteger commentsCount = MIN(MAX_NUMBER_OF_COMMENTS, [postItem totalComments]);
@@ -190,17 +191,17 @@
     
     if (indexPath.row == PHOTO_CELL_ROW) {
         cell = [self photoCellForTableView:tableView atIndexPath:indexPath];
+    } else if (indexPath.row == USERACTION_CELL_ROW) {
+      cell = [self userActionCellForTableView:tableView atIndexPath:indexPath];
     } else if (indexPath.row == LIKES_CELL_ROW) {
         cell = [self likesCellForTableView:tableView atIndexPath:indexPath];
     } else if (indexPath.row == CAPTION_CELL_ROW) {
         cell = [self captionCellForTableView:tableView atIndexPath:indexPath];
-    } else if (indexPath.row > CAPTION_CELL_ROW && indexPath.row < commentsRowLimit) {
+    } else {
         NSIndexPath *commentIndexPath = [NSIndexPath indexPathForRow:indexPath.row-captionRowOffset inSection:indexPath.section];
         cell = [self commentCellForTableView:tableView atIndexPath:commentIndexPath];
-    } else {
-        cell = [self userActionCellForTableView:tableView atIndexPath:indexPath];
     }
-    
+
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
     
