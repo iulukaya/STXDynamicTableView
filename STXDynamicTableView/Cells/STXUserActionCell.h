@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import "STXPostItem.h"
 
 @class STXUserActionCell;
 
