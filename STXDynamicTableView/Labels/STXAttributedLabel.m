@@ -15,7 +15,7 @@ static CGFloat STXAttributedLabelHeightPadding = 4.f;
 
 - (instancetype)initForParagraphStyleWithText:(NSString *)text
 {
-    self = [super init];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
         if ([text stringContainsEmoji]) {
             UIFont *commentFont = self.font;
