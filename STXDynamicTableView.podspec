@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.framework = "UIKit"
   s.requires_arc = true
   s.source_files = "STXDynamicTableView/STXDynamicTableView.h", "STXDynamicTableView/**/*.{h,m}"
-  s.resources = "STXDynamicTableView/**/*.xib"
+  s.resources = "STXDynamicTableView/**/*.xib", "STXDynamicTableView/Images.xcassets"
   s.dependency 'TTTAttributedLabel'
   s.dependency 'PureLayout'
   s.dependency 'KZPropertyMapper'
