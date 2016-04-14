@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import "STXUserItem.h"
 
 @class STXCaptionCell;
 
