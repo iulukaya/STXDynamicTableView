@@ -10,7 +10,7 @@
 
 #import "UIImageView+Masking.h"
 #import <MHPrettyDate/MHPrettyDate.h>
-
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface STXFeedPhotoCell ()
 
