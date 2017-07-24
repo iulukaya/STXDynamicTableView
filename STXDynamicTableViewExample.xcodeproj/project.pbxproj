@@ -15,10 +15,10 @@
 		010BA83D18ED10800030AF40 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA83B18ED10800030AF40 /* NSString+Emoji.m */; };
 		010BA84718ED43AC0030AF40 /* STXFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA84618ED43AC0030AF40 /* STXFeedViewController.m */; };
 		010BA85A18ED5D680030AF40 /* UIViewController+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 010BA85918ED5D680030AF40 /* UIViewController+Indicator.m */; };
-		011A76A51BC41EC300B0A046 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A41BC41EC300B0A046 /* Feed.storyboard */; settings = {ASSET_TAGS = (); }; };
-		011A76A71BC4213700B0A046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A61BC4213700B0A046 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		011A76AD1BC4283F00B0A046 /* STXFeedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A76AA1BC4283F00B0A046 /* STXFeedTableViewDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		011A76AE1BC4283F00B0A046 /* STXFeedTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A76AC1BC4283F00B0A046 /* STXFeedTableViewDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		011A76A51BC41EC300B0A046 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A41BC41EC300B0A046 /* Feed.storyboard */; };
+		011A76A71BC4213700B0A046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011A76A61BC4213700B0A046 /* LaunchScreen.storyboard */; };
+		011A76AD1BC4283F00B0A046 /* STXFeedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A76AA1BC4283F00B0A046 /* STXFeedTableViewDataSource.m */; };
+		011A76AE1BC4283F00B0A046 /* STXFeedTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011A76AC1BC4283F00B0A046 /* STXFeedTableViewDelegate.m */; };
 		017D674A18F6771800DD096A /* STXLikesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674818F6771800DD096A /* STXLikesCell.m */; };
 		017D674F18F6773100DD096A /* STXCaptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017D674D18F6773100DD096A /* STXCaptionCell.m */; };
 		0196482518EAB434001185C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196482418EAB434001185C3 /* Foundation.framework */; };
@@ -45,7 +45,7 @@
 		01E383C018F638030094BCC1 /* STXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383BE18F638030094BCC1 /* STXCommentCell.m */; };
 		01E383C518F65C6D0094BCC1 /* STXUserActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */; };
 		01E383C618F65C6D0094BCC1 /* STXUserActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */; };
-		1A1DFC0356454E938E07048F /* libPods-STXDynamicTableViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */; };
+		10DA66E21F265C9D00222E56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DA66E11F265C9D00222E56 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,9 +124,7 @@
 		01E383C218F65C6D0094BCC1 /* STXUserActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXUserActionCell.h; sourceTree = "<group>"; };
 		01E383C318F65C6D0094BCC1 /* STXUserActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STXUserActionCell.m; sourceTree = "<group>"; };
 		01E383C418F65C6D0094BCC1 /* STXUserActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STXUserActionCell.xib; sourceTree = "<group>"; };
-		2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample.release.xcconfig"; sourceTree = "<group>"; };
-		9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STXDynamicTableViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample.debug.xcconfig"; sourceTree = "<group>"; };
-		EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STXDynamicTableViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DA66E11F265C9D00222E56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 				0196482718EAB434001185C3 /* CoreGraphics.framework in Frameworks */,
 				0196482918EAB434001185C3 /* UIKit.framework in Frameworks */,
 				0196482518EAB434001185C3 /* Foundation.framework in Frameworks */,
-				1A1DFC0356454E938E07048F /* libPods-STXDynamicTableViewExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +154,7 @@
 		010BA7FC18EC07C90030AF40 /* STXDynamicTableView */ = {
 			isa = PBXGroup;
 			children = (
+				10DA66E11F265C9D00222E56 /* Images.xcassets */,
 				011A76A81BC4283F00B0A046 /* Protocols */,
 				010BA83918ED10640030AF40 /* Categories */,
 				010BA81E18EC11D40030AF40 /* Cells */,
@@ -246,7 +244,6 @@
 				0196484318EAB434001185C3 /* STXDynamicTableViewExampleTests */,
 				0196482318EAB434001185C3 /* Frameworks */,
 				0196482218EAB434001185C3 /* Products */,
-				7D3E8B648949E9F59F51A766 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,7 +263,6 @@
 				0196482618EAB434001185C3 /* CoreGraphics.framework */,
 				0196482818EAB434001185C3 /* UIKit.framework */,
 				0196483D18EAB434001185C3 /* XCTest.framework */,
-				EAD1347E22D244BC88270CFB /* libPods-STXDynamicTableViewExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -347,15 +343,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7D3E8B648949E9F59F51A766 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */,
-				2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,11 +350,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0196484D18EAB434001185C3 /* Build configuration list for PBXNativeTarget "STXDynamicTableViewExample" */;
 			buildPhases = (
-				1DE0784B99E84F7AA6A1219D /* Check Pods Manifest.lock */,
 				0196481D18EAB434001185C3 /* Sources */,
 				0196481E18EAB434001185C3 /* Frameworks */,
 				0196481F18EAB434001185C3 /* Resources */,
-				46FB61A0D3734DDC91CA4CEC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -435,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E383C618F65C6D0094BCC1 /* STXUserActionCell.xib in Resources */,
+				10DA66E21F265C9D00222E56 /* Images.xcassets in Resources */,
 				0196482F18EAB434001185C3 /* InfoPlist.strings in Resources */,
 				011A76A51BC41EC300B0A046 /* Feed.storyboard in Resources */,
 				0196485518EAB48F001185C3 /* instagram_media_popular.json in Resources */,
@@ -453,39 +439,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1DE0784B99E84F7AA6A1219D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		46FB61A0D3734DDC91CA4CEC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STXDynamicTableViewExample/Pods-STXDynamicTableViewExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0196481D18EAB434001185C3 /* Sources */ = {
@@ -631,7 +584,6 @@
 		};
 		0196484E18EAB434001185C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -647,7 +599,6 @@
 		};
 		0196484F18EAB434001185C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -663,7 +614,6 @@
 		};
 		0196485118EAB434001185C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AED87155782343E4057840A /* Pods-STXDynamicTableViewExample.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STXDynamicTableViewExample.app/STXDynamicTableViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -687,7 +637,6 @@
 		};
 		0196485218EAB434001185C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BDE37AE74C190EAE2837A7A /* Pods-STXDynamicTableViewExample.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/STXDynamicTableViewExample.app/STXDynamicTableViewExample";
 				FRAMEWORK_SEARCH_PATHS = (

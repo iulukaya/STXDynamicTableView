@@ -47,8 +47,8 @@
 - (void)setPostItem:(id<STXPostItem>)postItem
 {
     _postItem = postItem;
-    
-    [self.likeButton setImage:[UIImage imageNamed:(postItem.liked ? @"ic_favorite" : @"ic_favorite_border")]
+
+    [self.likeButton setImage:[UIImage imageNamed:(postItem.liked ? @"ic_favorite" : @"ic_favorite_border") inBundle:[NSBundle bundleForClass:[STXUserActionCell class]] compatibleWithTraitCollection:nil]
                      forState:UIControlStateNormal];
 }
 
@@ -56,7 +56,7 @@
 
 - (void)setButton:(UIButton *)button toLoved:(BOOL)loved
 {
-    [self.likeButton setImage:[UIImage imageNamed:(loved ? @"ic_favorite" : @"ic_favorite_border")]
+    [self.likeButton setImage:[UIImage imageNamed:(loved ? @"ic_favorite" : @"ic_favorite_border") inBundle:[NSBundle bundleForClass:[STXUserActionCell class]] compatibleWithTraitCollection:nil]
                      forState:UIControlStateNormal];
 }
 
