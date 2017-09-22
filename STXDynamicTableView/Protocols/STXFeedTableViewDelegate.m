@@ -67,6 +67,14 @@ static CGFloat const UserActionCellHeight = 44;
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  id<UITableViewDelegate> tableViewDelegate = (id<UITableViewDelegate>)self.controller;
+  if ([tableViewDelegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]) {
+    [tableViewDelegate tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+  }
+}
+
 #pragma mark - Row Updates
 
 - (void)reloadAtIndexPath:(NSIndexPath *)indexPath forTableView:(UITableView *)tableView
